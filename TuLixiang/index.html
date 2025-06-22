@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 屠理想</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部信息 -->
+        <header class="header">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="image_avatar.jpg" alt="个人照片" id="profile-photo">
+                </div>
+                <div class="profile-info">
+                    <h1 class="name" id="name"></h1>
+                    <p class="title" id="title"></p>
+                    <p class="summary" id="summary"></p>
+                </div>
+            </div>
+            <div class="contact-info" id="contact-info">
+                <!-- 联系方式将通过JavaScript动态生成 -->
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <div class="left-column">
+                <!-- 工作经历 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-briefcase"></i>
+                        工作经历
+                    </h2>
+                    <div class="timeline" id="experience-timeline">
+                        <!-- 工作经历将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 教育背景 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        教育背景
+                    </h2>
+                    <div class="education-item" id="education-item">
+                        <!-- 教育背景将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 自我评价 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-user-check"></i>
+                        自我评价
+                    </h2>
+                    <div class="self-evaluation" id="self-evaluation">
+                        <!-- 自我评价将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <!-- 技能专长 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-tools"></i>
+                        技能专长
+                    </h2>
+                    <div class="skills" id="skills-container">
+                        <!-- 技能将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 项目经验 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-project-diagram"></i>
+                        项目实践
+                    </h2>
+                    <div class="projects" id="projects-container">
+                        <!-- 项目经验将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 额外技能 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-star"></i>
+                        额外技能
+                    </h2>
+                    <div class="additional-skills" id="additional-skills">
+                        <!-- 额外技能将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 证书荣誉 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-award"></i>
+                        证书荣誉
+                    </h2>
+                    <div class="certificates" id="certificates-container">
+                        <!-- 证书荣誉将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- 底部 -->
+        <footer class="footer">
+            <p id="footer-copyright"></p>
+        </footer>
+    </div>
+
+    <!-- 嵌入配置文件数据 -->
+    <script id="resume-config" type="application/json">
+    {
+      "basic": {
+        "name": "屠理想",
+        "title": "软件技术专业应届毕业生",
+        "summary": "20岁软件技术专业应届毕业生，具备扎实的Java全栈开发技能和项目实践经验。熟练掌握Vue、SpringBoot、MySQL等主流技术栈，具备良好的团队协作能力和学习能力。"
+      },
+      "contact": {
+        "email": "tulixiang@example.com",
+        "phone": "+86 138-0000-0000",
+        "location": "安徽六安",
+        "linkedin": "linkedin.com/in/tulixiang"
+      },
+      "experience": [
+        {
+          "position": "软件开发工程师（实习）",
+          "company": "上海拉呗斯网络科技有限公司",
+          "period": "2025.05 - 至今",
+          "achievements": [
+            "负责公司内网管理系统的后端开发，使用Java、SpringBoot框架构建稳定可靠的服务端应用",
+            "独立完成多个核心功能模块的开发，包括用户权限管理、数据接口设计、业务逻辑处理等",
+            "运用MySQL数据库进行数据存储和查询优化，使用Redis实现缓存机制，提升系统性能",
+            "与前端开发团队密切协作，设计RESTful API接口，确保前后端数据交互顺畅",
+            "参与系统架构设计和技术选型讨论，持续优化代码质量和系统稳定性"
+          ]
+        },
+        {
+          "position": "质检抽查员",
+          "company": "合肥京东方 B5",
+          "period": "2023.04 - 2023.08",
+          "achievements": [
+            "负责工厂最后一道质检程序，对屏幕进行全方位测试和质量抽查",
+            "确保产品质量达标后安排物流发货，保障客户满意度",
+            "在12小时高强度工作中培养了优秀的抗压能力和吃苦耐劳精神",
+            "与部门同事密切协作，深刻理解团队协作和团队精神的重要性"
+          ]
+        }
+      ],
+      "education": {
+        "major": "软件技术",
+        "degree": "大专",
+        "school": "六安职业技术学院",
+        "period": "2023年 - 2026年",
+        "gpa": "主修课程：Java面向对象、SpringBoot、MySQL、Mybatis、Vue、JavaScript、HTML+CSS等前后端技术"
+      },
+      "skills": {
+        "technical": [
+          "Java",
+          "SpringBoot",
+          "MySQL",
+          "Mybatis",
+          "Redis",
+          "Vue.js",
+          "JavaScript",
+          "HTML/CSS"
+        ],
+        "soft": [
+          "团队协作",
+          "抗压能力",
+          "学习能力",
+          "沟通能力",
+          "责任心",
+          "吃苦耐劳"
+        ],
+        "languages": [
+          "中文（母语）",
+          "英语（基础）"
+        ]
+      },
+      "projects": [
+        {
+          "name": "轻松购商城",
+          "description": "基于Vue+SpringBoot的完整电商平台，包含用户管理、商品管理、购物车、订单管理等核心功能模块。实现了用户注册登录、商品搜索、购物车管理、订单处理等完整的电商业务流程。",
+          "technologies": [
+            "Vue",
+            "Ant Design Vue",
+            "SpringBoot",
+            "Mybatis",
+            "MySQL",
+            "Redis"
+          ],
+          "highlights": [
+            "使用AOP+Aspect+JWT+Redis实现接口鉴权，确保系统安全性",
+            "设计统一接口返回类型ApiResult，提升前后端交互效率",
+            "手动实现分页功能，不依赖第三方插件，代码可控性强",
+            "采用前后端分离架构，提升开发效率和系统可维护性"
+          ]
+        }
+      ],
+      "certificates": [
+        {
+          "name": "软件技术专业证书",
+          "issuer": "六安职业技术学院 - 2026年"
+        }
+      ],
+      "additional_skills": {
+        "office": [
+          "精通PowerPoint制作，擅长高视觉呈现的幻灯片设计",
+          "熟练使用Excel进行数据整理和报表制作",
+          "高效完成长文档排版，熟悉目录生成和格式规范"
+        ],
+        "design": [
+          "熟练使用Photoshop进行图片精修和基础海报设计",
+          "具备良好的排版设计能力和动画逻辑思维",
+          "擅长数据图表可视化和证件照处理"
+        ]
+      },
+      "self_evaluation": "性格热情开朗，待人友好真诚，具备良好的沟通能力和适应能力。工作认真负责，有耐心，能吃苦耐劳。为人诚恳勤奋，脚踏实地，具备强烈的团队精神和学习能力。通过实习经历培养了优秀的抗压能力和团队协作精神。",
+      "footer": {
+        "copyright": "© 2024 屠理想. 保留所有权利."
+      }
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html> 
